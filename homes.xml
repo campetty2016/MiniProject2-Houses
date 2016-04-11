@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+
+	Mini Project 2
+
+	Author: Candace Petty
+	Date: 3/24/16
+	File Name: homes.xml
+
+-->
+
+<!-- Houses Element -->
+<Houses>
+
+  <!-- House Element #1 and Information -->
+  <House Type="Ranch" listingNumber="2010310340232300">
+
+    <Address>
+
+      <Street>123 Rock Boulevard</Street>
+      <City>Cincinatti</City>
+      <State>Ohio</State>
+      <ZIP>34563</ZIP>
+
+    </Address>
+    <SqFt>3000</SqFt>
+    <Price>300000</Price>
+    <Floors>1</Floors>
+    <Thumbnail>Home1.jpg</Thumbnail>
+
+  </House>
+
+  <!-- House Element #2 and Information -->
+  <House Type="Ranch" listingNumber="230202730234">
+
+    <Address>
+
+      <Street>194 Spring Drive</Street>
+      <City>Chicago</City>
+      <State>Illinois</State>
+      <ZIP>45732</ZIP>
+
+    </Address>
+    <SqFt>2800</SqFt>
+    <Price>250000</Price>
+    <Floors>1</Floors>
+    <Thumbnail>Home2.jpg</Thumbnail>
+
+  </House>
+
+  <!-- House Element #3 and Information -->
+  <House Type="Traditional American" listingNumber="73202074327774">
+
+    <Address>
+
+      <Street>123 Washington Street</Street>
+      <City>Indianapolis</City>
+      <State>Indiana</State>
+      <ZIP>46241</ZIP>
+
+    </Address>
+    <SqFt>3000</SqFt>
+    <Price>300000</Price>
+    <Floors>2</Floors>
+    <Thumbnail>Home3.jpg</Thumbnail>
+
+  </House>
+
+  <!-- House Element #4 and Information -->
+  <House Type="Ranch" listingNumber="203121273101">
+
+    <Address>
+
+      <Street>345 Star Boulevard</Street>
+      <City>Cincinatti</City>
+      <State>Ohio</State>
+      <ZIP>34563</ZIP>
+
+    </Address>
+    <SqFt>3000</SqFt>
+    <Price>300000</Price>
+    <Floors>1</Floors>
+    <Thumbnail>Home4.jpg</Thumbnail>
+
+  </House>
+
+  <!-- House Element #5 and Information -->
+  <House Type="Ranch" listingNumber="123977207237023">
+
+    <Address>
+
+      <Street>194 Cedar Drive</Street>
+      <City>Chicago</City>
+      <State>Illinois</State>
+      <ZIP>45732</ZIP>
+
+    </Address>
+    <SqFt>3500</SqFt>
+    <Price>300000</Price>
+    <Floors>1</Floors>
+    <Thumbnail>Home5.jpg</Thumbnail>
+
+  </House>
+
+  <!-- House Element #6 and Information -->
+  <House Type="Traditional American" listingNumber="36262064203042">
+
+    <Address>
+
+      <Street>133 Hill Drive</Street>
+      <City>Miami</City>
+      <State>Florida</State>
+      <ZIP>13842</ZIP>
+
+    </Address>
+    <SqFt>4000</SqFt>
+    <Price>350000</Price>
+    <Floors>2</Floors>
+    <Thumbnail>Home6.jpg</Thumbnail>
+
+  </House>
+
+  <!-- House Element #7 and Information -->
+  <House Type="Other" listingNumber="6260260432032">
+
+    <Address>
+
+      <Street>321 Sea Lane</Street>
+      <City>Cincinatti</City>
+      <State>Ohio</State>
+      <ZIP>34563</ZIP>
+
+    </Address>
+    <SqFt>3000</SqFt>
+    <Price>400000</Price>
+    <Floors>1</Floors>
+    <Thumbnail>Home7.jpg</Thumbnail>
+
+  </House>
+
+  <!-- House Element #8 and Information -->
+  <House Type="Other" listingNumber="23602303260320">
+
+    <Address>
+
+      <Street>194 Oak Street</Street>
+      <City>Chicago</City>
+      <State>Illinois</State>
+      <ZIP>45732</ZIP>
+
+    </Address>
+    <SqFt>2900</SqFt>
+    <Price>350000</Price>
+    <Floors>1</Floors>
+    <Thumbnail>Home8.jpg</Thumbnail>
+
+  </House>
+
+  <!-- House Element #9 and Information -->
+  <House Type="Other" listingNumber="7236032060320632">
+
+    <Address>
+
+      <Street>282 Walnut Street</Street>
+      <City>Madison</City>
+      <State>Wisconsin</State>
+      <ZIP>21929</ZIP>
+
+    </Address>
+    <SqFt>2500</SqFt>
+    <Price>200000</Price>
+    <Floors>1</Floors>
+    <Thumbnail>Home9.jpg</Thumbnail>
+
+  </House>
+
+  <!-- House Element #10 and Information -->
+  <House Type="Traditional American" listingNumber="76230230643206023">
+
+    <Address>
+
+      <Street>8302 EdgeWood Drive</Street>
+      <City>Cincinatti</City>
+      <State>Ohio</State>
+      <ZIP>34563</ZIP>
+
+    </Address>
+    <SqFt>5500</SqFt>
+    <Price>400000</Price>
+    <Floors>2</Floors>
+    <Thumbnail>Home10.jpg</Thumbnail>
+
+  </House>
+
+  <!-- House Element #11 and Information -->
+  <House Type="Traditional American" listingNumber="62360320643602">
+
+    <Address>
+
+      <Street>1449 Willow Lane</Street>
+      <City>Chicago</City>
+      <State>Illinois</State>
+      <ZIP>45732</ZIP>
+
+    </Address>
+    <SqFt>9000</SqFt>
+    <Price>650000</Price>
+    <Floors>3</Floors>
+    <Thumbnail>Home11.jpg</Thumbnail>
+
+  </House>
+
+  <!-- House Element #12 and Information -->
+  <House Type="Ranch" listingNumber="63260320643202">
+
+    <Address>
+
+      <Street>3452 Rockville Rd</Street>
+      <City>Indianapolis</City>
+      <State>Indiana</State>
+      <ZIP>46241</ZIP>
+
+    </Address>
+    <SqFt>2000</SqFt>
+    <Price>250000</Price>
+    <Floors>1</Floors>
+    <Thumbnail>Home12.jpg</Thumbnail>
+
+  </House>
+
+  <!-- House Element #13 and Information -->
+  <House Type="Ranch" listingNumber="3427246020">
+
+    <Address>
+
+      <Street>7543 Steel Way</Street>
+      <City>Bedford</City>
+      <State>Indiana</State>
+      <ZIP>38292</ZIP>
+
+    </Address>
+    <SqFt>2500</SqFt>
+    <Price>200000</Price>
+    <Floors>1</Floors>
+    <Thumbnail>Home13.jpg</Thumbnail>
+
+  </House>
+
+  <!-- House Element #14 and Information -->
+  <House Type="Traditional American" listingNumber="63460432020">
+
+    <Address>
+
+      <Street>194 Speedway Drive</Street>
+      <City>Nashville</City>
+      <State>Tennessee</State>
+      <ZIP>49928</ZIP>
+
+    </Address>
+    <SqFt>3000</SqFt>
+    <Price>450000</Price>
+    <Floors>2</Floors>
+    <Thumbnail>Home14.jpg</Thumbnail>
+
+  </House>
+
+  <!-- House Element #15 and Information -->
+  <House Type="Other" listingNumber="603406403063">
+
+    <Address>
+
+      <Street>2819 Fiesta Lane</Street>
+      <City>Las Vegas</City>
+      <State>Nevada</State>
+      <ZIP>48739</ZIP>
+
+    </Address>
+    <SqFt>3000</SqFt>
+    <Price>300000</Price>
+    <Floors>1</Floors>
+    <Thumbnail>Home15.jpg</Thumbnail>
+
+  </House>
+
+  <!-- House Element #16 and Information -->
+  <House Type="Traditional American" listingNumber="7402024020520">
+
+    <Address>
+
+      <Street>290 YellowBrick Road</Street>
+      <City>Cincinatti</City>
+      <State>Ohio</State>
+      <ZIP>34563</ZIP>
+
+    </Address>
+    <SqFt>3500</SqFt>
+    <Price>250000</Price>
+    <Floors>1</Floors>
+    <Thumbnail>Home16.jpg</Thumbnail>
+
+  </House>
+
+</Houses>

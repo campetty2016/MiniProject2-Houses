@@ -1,0 +1,73 @@
+<!--
+
+	Mini Project 2
+
+	Author: Candace Petty
+	Date: 3/23/16
+	File Name: index.html
+
+-->
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <!-- Links to Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta charset="UTF-8" />
+
+  </head>
+
+  <!-- Display Results on Load -->
+
+  <body onload="displayResult()">
+
+    <!-- Wrapper -->
+    <div class="wrapper">
+
+      <header>
+
+        <!-- Logo Container -->
+        <div class="Logo">
+
+          <!-- Logo and Company Name -->
+          <img src="images/Logo.jpg" alt="logo" />
+          <h1>Regal Reality</h1>
+
+        </div>
+
+        <!-- Selection Form that Displays the Different Categories of Homes Available -->
+        <form>
+
+          <!-- Dropdown Form that Contains Categories -->
+          <select id="SelectType" onclick="ChangeValue(xml)">
+
+            <!-- Ranch Style -->
+            <option name="Ranch" value="Ranch">Ranch</option>
+
+            <!-- Traditional American Style -->
+            <option name="Traditional" value="Traditional American">Traditional American</option>
+
+            <!-- Other Style -->
+            <option name="Other" value="Other">Other</option>
+
+          </select>
+
+        </form>
+
+      </header>
+
+      <!-- Content Based on Selection -->
+      <div id="Content"></div>
+
+    </div>
+
+    <!-- Links to "app.js" -->
+    <script src="js/app.js"></script>
+
+  </body>
+
+</html>
