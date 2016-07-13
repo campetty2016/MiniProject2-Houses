@@ -1,73 +1,420 @@
- /*
-	Mini Project 2
-	Author: Candace Petty
-	Date: 3/24/16
-	File Name: style.css
-*/
-  
-  *, html {
-    margin: 0;
-  }
-  body {
-    background-color: rgb(133, 201, 160);
-  }
-  .wrapper {
-    width: 1200px;
-    height: 100%;
+@-webkit-keyframes typeOut {
+    from {
+        width: 0;
+    }
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Droid Serif', serif;
+}
+body {
+    background-color: lavender;
+}
+.wrapper {
+    width: 100%;
     margin: auto;
-  }
-  header {
-    padding: 10px;
-    background-color: rgb(169, 219, 175);
-    border-bottom: 2px double lightgreen;
-    border-left: 2px double lightgreen;
-    border-right: 2px double lightgreen;
+    height: auto;
+    background-color: purple;
+}
+.Edge {
     width: 95%;
+    height: auto;
+    margin: auto;
+    background-color: oldlace;
+    border-left: 1px double oldlace;
+    border-right: 1px double oldlace;
+    flex-direction: column;
+    z-index: 1;
+}
+header {
+    width: 100%;
+    border-bottom: 2px double purple;
+    background-color: oldlace;
     height: 120px;
-  }
-  .Logo {
-    width: 320px;
-    height: 80px;
-    padding: 5px;
-  }
-  .Logo img {
-    float: left;
-    width: 80px;
-    height: 80px;
-    margin-right: 25px;
-    border-radius: 1em;
-  }
-  h1 {
-    margin-left: 20px;
-    color: white;
-    text-shadow: 1px 1px 1px lightgreen, 1px 1px 1px black;
-    font-size: 2.2em;
-  }
-  h2 {
-    margin-bottom: 15px;
-  }
-  #Content {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+}
+.center {
+    margin: auto;
+}
+h1 {
+    font-size: 200%;
+    color: purple;
+    text-align: center;
+    text-shadow: 1px 1px 1px white, 1px 1px 1px black, 1px 1px 1px white, 1px 1px 1px purple;
+    font-style: italic;
+    margin: auto;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+h1::first-letter, span {
+    font-size: 175%;
+    color: purple;
+    letter-spacing: 1px;
+}
+hr {
+    border: 1px double purple;
+    margin-bottom: 2px;
+}
+nav {
+    width: 100%;
+    height: 30%;
+    margin: auto;
+    display: flex;
+    padding-top: 5px;
+    text-align: center;
+    border-top: 1px double white;
+    border-bottom: 1px double white;
+    justify-content: space-around;
+    font-weight: 600;
+    background-color: rgba(156, 39, 176, 0.2);
+}
+a {
+    text-decoration: none;
+    font-size: 125%;
+    color: rebeccapurple;
+    text-shadow: 1px 1px 1px white, 1px 1px 1px purple, 2px 2px 2px white, 2px 2px 2px purple;
+    letter-spacing: 1px;
+    border-bottom: 5px double transparent;
+}
+nav a:visited {
+    color: black;
+}
+nav a:hover, a:active {
+    text-shadow: 2px 2px 2px white;
+    color: purple;
+    border-bottom: 5px double purple;
+    transition: border-bottom 2s;
+    -webkit-transition: border-bottom 2s;
+}
+.Active {
+    text-shadow: 2px 2px 2px white;
+    color: purple;
+    border-bottom: 3px double purple;
+}
+section {
+    padding-top: 120px;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 100%;
+}
+section:nth-child(even) {
+    width: 98%;
+    height: 75%;
+}
+.Modal {
+    background-color: rgba(156, 39, 176, 0.2);
+    z-index: 1;
+    position: absolute;
     width: 95%;
     height: 100%;
-    background-color: rgb(133, 201, 160);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#HomeSection {
+    background-image: url("../img/Lily.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: darkmagenta;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    height: 100%;
+    font-size: 175%;
+    text-shadow: 1px 1px 1px black, 1px 1px 1px white, 1px 1px 1px purple;
+}
+.containAction {
+    background-color: rgba(255, 255, 255, 0.4);
+    z-index: 1;
+    width: auto;
+    height: auto;
+    margin: auto;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
     padding: 10px;
-  }
-  #Homes {
-    width: 1209px;
-    height: 800px;
-  }
-  #Houses {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    border: 1px double purple;
+    box-shadow: 1px 2px 3px silver;
+}
+h2 {
+    font-size: 5vw;
+    margin-bottom: 5px;
+    width: 16.5em;
+    width: 21ch;
+    text-indent: 5px;
+    white-space: nowrap;
+    font-style: italic;
+    color: darkmagenta;
+    overflow: hidden;
+    -webkit-animation: typeOut 2s steps(25, end);
+    -moz-animation: typeOut 2s steps(25, end);
+}
+h2::first-letter {
+    font-size: 6vw;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+#Avatar {
+    height: 25vw;
+    width: 20vw;
+    overflow: hidden;
     float: left;
-    padding: 10px;
-    margin-right: 75px;
-    margin-bottom: 25px;
-    border: 1px groove lightblue;
-    background-color: rgb(230, 240, 234);
-  }
-  #HouseImages {
-    width: 300px;
-    height: 300px;
-  }
-  #SelectType {
-    margin-left: 160px;
-  }
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+#Avatar img {
+    height: 100%;
+    width: 100%;
+    margin-top: 2%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px double lavender;
+    outline: 1px 1px 1px black;
+    box-shadow: 1px 1px 1px lavender, 1px 1px 1px white, 1px 1px 1px purple, 1px 1px 1px black, 1px 1px 1px purple;
+    background-size: cover;
+    background-position: center;
+}
+#AboutSection {
+    height: 400px;
+    padding-left: 2%;
+}
+#AboutSection p {
+    word-wrap: break-word;
+    padding-top: 15px;
+    color: purple;
+    font-style: italic;
+    font-size: 1.4vw;
+    line-height: 2em;
+    letter-spacing: 1px;
+}
+#AboutSection p::first-letter {
+    font-size: 3vw;
+    padding-top: 15px;
+    color: purple;
+    letter-spacing: 1px;
+}
+.arrows {
+    color: purple;
+}
+#prev {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    z-index: 2;
+}
+#next {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    z-index: 2;
+}
+.arrows:hover, .arrows a:hover {
+    color: white;
+    text-shadow: 1px 1px 1px white, 2px 2px 2px purple, 1px 1px 1px black;
+    border-radius: 100%;
+    transition: text-shadow 1s, background-color 1s;
+    -webkit-transition: text-shadow 1s, background-color 1s;
+    border-width: 0px;
+    text-decoration: none;
+}
+#SliderContainer {
+    height: 100%;
+    width: 80%;
+    position: relative;
+    background-color: rgba(156, 39, 176, 0.17);
+    display: flex;
+    flex-direction: row;
+    border: 5px double oldlace;
+    margin: auto;
+    border-radius: 1em;
+    margin-top: 25px;
+    padding-left: 0px;
+    justify-content: space-between;
+    overflow: hidden;
+}
+#Slider {
+    height: 100%;
+    width: 75%;
+    position: absolute;
+    border-radius: 1em;
+    margin-top: 25px;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    background-size: contain;
+}
+#Slider:first-child {
+    opacity: 1;
+}
+#Web2 {
+    margin: 0 50px;
+}
+.Slides {
+    width: 50%;
+}
+.Slide {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: 2px double purple;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    position: absolute;
+    margin: auto;
+}
+.SlideItem {
+    width: 650px;
+}
+.Slide img {
+    margin: auto;
+}
+.big {
+    width: 80%;
+    height: 90%;
+}
+.long {
+    width: 60%;
+}
+.other {
+    width: 80%;
+    height: 90%;
+}
+.SlideItem:target {
+    z-index: 1;
+    opacity: 1;
+}
+#WorkSection {
+    height: 600px;
+    padding-bottom: 50px;
+}
+#WorkSection h2 {
+    padding-left: 2%;
+}
+#ContactSection {
+    height: auto;
+    padding-left: 2%;
+}
+#ContactSection p {
+    word-wrap: break-word;
+    padding-top: 15px;
+    color: purple;
+    font-style: italic;
+    font-size: 1.4vw;
+    line-height: 1.5em;
+    letter-spacing: 1px;
+}
+#ContactSection p::first-letter {
+    font-size: 3vw;
+    padding-top: 15px;
+    color: purple;
+    letter-spacing: 1px;
+}
+fieldset {
+    border: 2px double purple;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    width: 90%;
+    color: purple;
+}
+form {
+    margin-top: 25px;
+}
+input {
+    width: 100%;
+}
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus, input[type="text"]:hover, textarea:hover {
+    outline: none;
+    border: none;
+    border: 2px inset purple;
+    background-color: lavender;
+}
+input[type="text"]:hover, input[type="email"]:focus, textarea:hover {
+    background-color: oldlace;
+}
+input, textarea {
+    display: block;
+    margin-bottom: 20px;
+    width: 90%;
+    border: 2px inset oldlace;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding-left: 5px;
+    font-size: 1em;
+    text-indent: 15px;
+    height: 50px;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    background-color: lavender;
+    display: flex;
+    align-self: center;
+    color: purple;
+}
+textarea {
+    padding-top: 15px;
+}
+#submit {
+    display: block;
+    margin-bottom: 20px;
+    width: auto;
+    border: 2px inset oldlace;
+    margin-top: 20px;
+    margin-left: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-indent: 5px;
+    height: 50px;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    background-color: purple;
+    font-size: 1.2em;
+    display: flex;
+    align-self: center;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: lavender;
+}
+#submit:hover {
+    background-color: lavender;
+    color: purple;
+    text-shadow: 1px 1px 1px oldlace;
+    border: 2px inset purple;
+}
+footer {
+    background-color: rgba(156, 39, 176, 0.2);
+    border-top: 2px double purple;
+    width: 100%;
+    height: 8%;
+    font-size: 100%;
+    display: flex;
+    margin: auto;
+    position: relative;
+    bottom: 0;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    font-weight: 600;
+    color: purple;
+    font-style: italic;
+    z-index: 1;
+}
